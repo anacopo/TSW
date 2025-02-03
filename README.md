@@ -1,17 +1,15 @@
 ## Summary
 
-This work presents different visualisation techniques of attention in visual transformers(ViTs). Visualization techniques play a crucial role in enhancing the interpretability of ViTs by providing insights into the model’s decision making process.
+This work presents different visualisation techniques that help in the explainability of visual transformers(ViTs). Visualization techniques play a crucial role in enhancing the interpretability of ViTs by providing insights into the model’s decision making process. Following methods have been analyzed: Attention Rollout, Transition Attention Maps, Class Activation Maps(CAM), Layerwise Relevance Propagation(LRP) and Causal Explanations. Two out of these five methods have been implemented: CAM and LRP. By applying different kind of evaluation techniques, LRP is the winner.
 
 ## Requirements
 
-pip install einops
-
-You can run this notebook in google colaboratory or kaggle and set the runtime type to GPU.
+No requirements are other then a internet connection and a browser are needed. The implementation is done in a Jupyter Notebook, which can be run in google colaboratory or kaggle. You need to set the runtime type to GPU.
 
 ## Dataset
 
-The Pascal Visual Object Classes (VOC) dataset has been used.
-You can download it directly from torchvision
+The Pascal Visual Object Classes 2012 (VOC) validation dataset has been used.
+You can download it directly from torchvision.
 
 ```
 from torchvision.datasets import VOCSegmentation
